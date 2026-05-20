@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/ha466/livelife/main/WhatsApp%20Image%202026-05-20%20at%202.42.43%20PM.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Life Healthcare Lab — Quality Diagnostics</title>
+    
+    <!-- Google Fonts Support for English (Inter) and Tamil (Noto Sans Tamil) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Script Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryWhite: '#FFFFFF',
+              softBlue: '#E8F4FD',
+              mediumBlue: '#4A9EBF',
+              deepNavy: '#0A2342',
+              tealAccent: '#1A7A8A',
+              lightCyan: '#B2EBF2',
+              textPrimary: '#1A1A2E',
+              textSecondary: '#4A5568',
+              textLight: '#718096',
+              highlightRed: '#C0392B',
+              goldBadge: '#D4AF37',
+              successGreen: '#27AE60',
+              cardBackground: '#F7FBFF',
+              borderLight: '#DCE8F5',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      /* Apply standardized fonts globally */
+      body {
+        font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+      }
+      
+      /* Premium smooth fade transitions */
+      .fade-in {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      /* Custom clean scrollbars configuration */
+      .scrollbar-none::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
